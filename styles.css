@@ -1,0 +1,71 @@
+.wrapper{
+    background-color: #B2ABBF;
+    display: grid;
+    grid-template-rows: 1fr 13fr;
+}
+
+.open-btn-holder{
+    background-color: #C7EBF0;
+    padding: 1.5em ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-btn{
+    padding: 1em;
+    width: 40%;
+    font-size: 1.2em;
+    border-radius: 3rem;
+}
+
+.container{
+    background-color: #B1B5C8;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(13,1fr);
+    /* grid-template-columns: repeat(); */
+}
+
+.book-card{
+    height: 300px;
+    background-color: #fff;
+    margin: 1em 1em;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.dialog-box {
+    height: 350px;
+    background-color: lightgreen;
+    border-radius: 30px;
+    /* Remove display flex from dialog box */
+}
+
+/* Flexbox for form centering inside the dialog box */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 70%;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width:1130px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}

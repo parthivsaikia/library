@@ -18,11 +18,20 @@ closeBtn.addEventListener('click', () => {
 
 confirmBtn.addEventListener('click',addToLib);
 
-function Book(name,author,noOfPages,readStatus){
-    this.name = name;
-    this.author = author;
-    this.noOfPages = noOfPages;
-    this.readStatus = readStatus;
+// function Book(name,author,noOfPages,readStatus){
+//     this.name = name;
+//     this.author = author;
+//     this.noOfPages = noOfPages;
+//     this.readStatus = readStatus;
+// }
+
+class Book{
+    constructor(name,author,noOfPages,readStatus){
+        this.name = name;
+        this.author = author;
+        this.noOfPages = noOfPages;
+        this.readStatus = readStatus;
+    }
 }
 
 function addToLib(event){

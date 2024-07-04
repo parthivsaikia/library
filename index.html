@@ -8,41 +8,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <button class="open-btn">Open the dialog box</button>
-        <dialog class="dialog-box">
-            <form method="dialog">
-                <fieldset>
-                    <legend>Enter the book details</legend>
-                    <div>
-                        <label for="book-name">Name of the book</label>
-                        <input class="book-name" type="text" id="book-name" name="book-name">
-                    </div>
-                    <div>
-                        <label for="author-name">Name of the author</label>
-                        <input class="author-name" type="text" id="author-name" name="author-name" >
-                    </div>
-                    <div>
-                        <label for="no-of-pages">Number of pages in the book</label>
-                        <input class="no-of-pages" type="text" id="no-of-pages" name="no-of-pages" >
-                    </div>
-                    <div>Have you read the book?</div>
-                    <div>
-                        <input class="read-status" type="radio" id="Yes" value="Yes" name="read-status">
-                        <label for="Yes">Yes</label>
-                    </div>
-                    <div>
-                        <input class="read-status" type="radio" id="No" value="No" name="read-status">
-                        <label for="No">No</label>
-                    </div>
-                    <div>
-                        <button class="close" value="cancel" formmethod="dialog" type="button">Cancel</button>
-                        <button class="confirm" value="default">Confirm</button>
-                    </div>
-                </fieldset>
-            </form>
-        </dialog>
-        <output></output>
+    <div class="wrapper">
+
+        <div class="open-btn-holder">
+            <button class="open-btn">Add book</button>
+        </div>
+        <div class="container">
+            <dialog class="dialog-box">
+                <form method="dialog">
+                    <fieldset>
+                        <legend>Enter the book details</legend>
+                        <div>
+                            <label for="book-name">Name of the book</label>
+                            <input class="book-name" type="text" id="book-name" name="book-name">
+                        </div>
+                        <div>
+                            <label for="author-name">Name of the author</label>
+                            <input class="author-name" type="text" id="author-name" name="author-name" >
+                        </div>
+                        <div>
+                            <label for="no-of-pages">Number of pages in the book</label>
+                            <input class="no-of-pages" type="text" id="no-of-pages" name="no-of-pages" >
+                        </div>
+                        <div>Have you read the book?</div>
+                        <div>
+                            <input class="read-status" type="radio" id="Yes" value="Yes" name="read-status">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div>
+                            <input class="read-status" type="radio" id="No" value="No" name="read-status">
+                            <label for="No">No</label>
+                        </div>
+                        <div>
+                            <button class="close" value="cancel" formmethod="dialog" type="button">Cancel</button>
+                            <button class="confirm" value="default">Confirm</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </dialog>
+            
+        </div>
     </div>
 </body>
 </html>
